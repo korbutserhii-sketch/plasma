@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NovaTech | Future Technologies</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cbd5e1;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f5a0;
+}
+
+/* Hero Section */
+.hero {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero span {
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    color: #0f172a;
+}
+
+.btn-primary:hover {
+    opacity: 0.85;
+}
+
+/* Features */
+.features {
+    padding: 100px 0;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 36px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #243449;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #94a3b8;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 120px 0;
+    background: linear-gradient(90deg, #00f5a0, #00d9f5);
+    color: #0f172a;
+}
+
+.cta h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cta button {
+    background: #0f172a;
+    color: white;
+}
+
+.cta button:hover {
+    background: #1e293b;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+@media(max-width: 768px){
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <div class="logo">NovaTech</div>
+        <ul>
+            <li><a href="#">Solutions</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+
+<section class="hero">
+    <div class="container">
+        <h1>Building the <span>Future of Technology</span></h1>
+        <p>We develop advanced, scalable solutions that combine innovation, sustainability, and performance to transform industries worldwide.</p>
+        <button class="btn btn-primary">Get Started</button>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Our Core Technologies</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>AI-Driven Systems</h3>
+                <p>Smart automation and predictive analytics to optimize performance and efficiency.</p>
+            </div>
+            <div class="card">
+                <h3>Advanced Engineering</h3>
+                <p>High-performance hardware and industrial systems built for real-world impact.</p>
+            </div>
+            <div class="card">
+                <h3>Sustainable Innovation</h3>
+                <p>Energy-efficient and environmentally responsible technologies for the next generation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Innovate?</h2>
+        <p>Partner with us to accelerate your technological transformation.</p>
+        <button class="btn">Contact Our Team</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 NovaTech Inc. All rights reserved.
+</footer>
+
+</body>
+</html>
